@@ -17,10 +17,22 @@
     // $search = Usuario::search("roo");
     // echo json_encode($search);
 
+    // $usuario = new Usuario();
+    // $usuario->login("root","!@#$");
+
+    // echo $usuario;
+
+    // $aluno = new Usuario("Celi","3345");
+    
+    // $aluno->insert();
+
+    // echo $aluno;
+
     $usuario = new Usuario();
-    $usuario->login("root","!@#$");
+    $usuario->loadById(8);
+
+    $usuario->update("professor", "%%$#");
 
     echo $usuario;
-
 
 ?>
